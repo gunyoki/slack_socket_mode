@@ -1,4 +1,4 @@
-# SlackbotLite
+# SlackSocketMode
 
 Easy to build Slackbot.
 
@@ -7,23 +7,23 @@ Easy to build Slackbot.
 Install the gem and add to the application's Gemfile by executing:
 
 ```sh
-$ bundle add slackbot_lite
+$ bundle add slack_socket_mode
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```sh
-$ gem install slackbot_lite
+$ gem install slack_socket_mode
 ```
 
 ## Usage
 
 ```ruby
-require 'slackbot_lite'
+require 'slack_socket_mode'
 
 app_token = '...'
 logger = Logger.new($stdout)
-client = SlackbotLite.new(app_token, logger: logger)
+client = SlackSocketMode.new(app_token, logger: logger)
 return unless client.open(debug_reconnects: true)
 
 client.each_payload do |payload|
@@ -43,7 +43,7 @@ To release a new version, update the version number in `version.rb`, and then ru
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/gunyoki/slackbot_lite .
+Bug reports and pull requests are welcome on GitHub at https://github.com/gunyoki/slack_socket_mode .
 
 ## License
 

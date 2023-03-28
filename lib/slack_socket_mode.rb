@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require_relative "slackbot_lite/version"
+require_relative "slack_socket_mode/version"
 require "cgi"
 require "json"
 require "faraday"
 require "websocket_client_lite"
 
-class SlackbotLite
+class SlackSocketMode
   attr_accessor :slack_app_token, :logger, :websocket
 
   def initialize(slack_app_token, logger: nil)

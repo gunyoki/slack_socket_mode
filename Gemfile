@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in slackbot_lite.gemspec
+# Specify your gem's dependencies in slack_socket_mode.gemspec
 gemspec
 
 gem "rake", "~> 13.0"
