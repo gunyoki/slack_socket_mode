@@ -51,7 +51,7 @@ GEM
     ruby2_keywords (0.0.5)
     unicode-display_width (2.4.2)
     websocket (1.2.9)
-    websocket_client_lite (0.1.1)
+    websocket_client_lite (0.1.2)
       websocket
 
 PLATFORMS
