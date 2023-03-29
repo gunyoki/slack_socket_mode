@@ -16,7 +16,11 @@ class SlackSocketMode
 
   def open(debug_reconnects: false)
     ws_url = fetch_websocket_url(@slack_app_token)
+    return false unless ws_url
+
     ws_url = add_query_to_url(ws_url, debug_reconnects: true) if debug_reconnects
+    @logger.debug("[slackbot] WebSocket URL: #{ws_url}")
+
     @websocket = WebsocketClientLite.new(ws_url, logger: @logger)
     @websocket.handshake
   end
